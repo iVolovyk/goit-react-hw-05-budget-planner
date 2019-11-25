@@ -17,10 +17,19 @@ const StyledInput = styled.input`
 `;
 
 const Input = ({
-  type = ' text',
+  type = 'text',
   value = '',
   onChange = () => null,
   name = '',
-}) => <StyledInput type={type} value={value} onChange={onChange} name={name} />;
+  required = false,
+}) => (
+  <StyledInput
+    type={type}
+    value={value}
+    onChange={onChange}
+    name={name}
+    required={required}
+  />
+);
 
 export default Input;

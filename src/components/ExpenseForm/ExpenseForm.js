@@ -49,6 +49,7 @@ class ExpenseForm extends Component {
             type="text"
             name="name"
             value={name}
+            required
             onChange={this.handleChange}
           />
         </Label>
@@ -58,6 +59,7 @@ class ExpenseForm extends Component {
             type="number"
             name="amount"
             value={amount}
+            required
             onChange={this.handleChange}
           />
         </Label>
